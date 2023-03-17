@@ -25,8 +25,8 @@ val = st.slider("From poor to the best!",0,10)
 
 num_recommendations = st.slider("Number of Recommendations", 1, 10, 5)
 
-food = pd.read_csv("input/food.csv")
-ratings = pd.read_csv("input/ratings.csv")
+food = pd.read_csv("../input/food.csv")
+ratings = pd.read_csv("../input/ratings.csv")
 combined = pd.merge(ratings, food, on='Food_ID')
 
 
